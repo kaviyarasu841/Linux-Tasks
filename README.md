@@ -1,10 +1,14 @@
-# Linux Community - Task 1
+# Linux Community - Linux Tasks
 
-## Task 1: Installation & Environment
+This repository contains my Linux Community Tasks 1, 2 and 3.
+
+---
+
+# Task 1: Installation & Environment
 
 This task covers the basics of Linux and terminal environment configuration.
 
-### Topics Studied
+## Topics Studied
 
 - Linux
 - Terminal, Shell and Console
@@ -13,11 +17,11 @@ This task covers the basics of Linux and terminal environment configuration.
 - PATH
 - `.bashrc`
 - Aliases
-- PS1 prompt customization
+- PS1 Prompt Customization
 - `~/bin`
 - `LS_COLORS`
 
-### Commands Explored
+## Commands Explored
 
 ```bash
 echo $SHELL
