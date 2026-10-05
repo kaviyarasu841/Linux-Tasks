@@ -1,0 +1,15 @@
+echo $SHELL
+echo $PATH
+env
+printenv
+which bash
+which zsh
+ls -la ~/.bashrc
+alias ll='ls -la'
+alias c='clear'
+source ~/.bashrc
+mkdir -p ~/bin
+export PATH="$HOME/bin:$PATH"
+echo $PATH
+echo $PS1
+echo $LS_COLORS

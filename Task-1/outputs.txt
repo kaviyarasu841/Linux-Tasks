@@ -1,0 +1,9 @@
+echo $SHELL -> /bin/bash
+which bash -> /usr/bin/bash
+which zsh -> Zsh not installed
+.bashrc -> /home/kavi/.bashrc
+alias ll -> ls -la
+alias c -> clear
+~/bin -> Added to PATH
+PS1 -> Customized colored terminal prompt
+LS_COLORS -> .txt White, Directories Blue, Images Violet, PDF/DOCX Green
