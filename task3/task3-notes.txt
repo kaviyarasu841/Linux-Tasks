@@ -1,0 +1,33 @@
+LINUX TASK 3 - PERMISSIONS & OWNERSHIP
+
+1. chmod
+chmod changes file and directory permissions.
+
+2. chown
+chown changes the owner and group ownership of a file.
+
+3. chgrp
+chgrp changes the group ownership.
+
+4. umask
+umask controls default permissions for newly created files and directories.
+
+5. Shared Directory
+A shared directory can be configured using group ownership and setgid.
+
+6. Read-only Directory
+A directory with 555 permissions has read and execute permissions but no write permission.
+
+7. User, Group and Other
+User = owner
+Group = users belonging to the file's group
+Other = everyone else
+
+8. Script Permissions
+644 = no execute permission
+755 = execute permission available
+
+Permission values:
+r = 4
+w = 2
+x = 1

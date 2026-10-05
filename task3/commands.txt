@@ -1,0 +1,60 @@
+LINUX TASK 3 - COMMANDS USED
+
+1. Basic Permissions
+pwd
+ls -l
+touch notes.txt
+mkdir testdir
+ls -l
+
+2. Script Permissions
+printf '#!/bin/bash\necho "Hello from Linux"\n' > hello.sh
+ls -l hello.sh
+chmod 755 hello.sh
+ls -l hello.sh
+./hello.sh
+
+3. Break and Fix Script Permission
+chmod 644 hello.sh
+ls -l hello.sh
+./hello.sh
+chmod 755 hello.sh
+ls -l hello.sh
+./hello.sh
+
+4. User and Group Permissions
+chmod 640 notes.txt
+ls -l notes.txt
+
+5. Ownership
+sudo chown root:root notes.txt
+ls -l notes.txt
+sudo chown kavi:kavi notes.txt
+ls -l notes.txt
+
+6. Group Ownership
+sudo groupadd -f task3group
+sudo chgrp task3group notes.txt
+ls -l notes.txt
+sudo chgrp kavi notes.txt
+ls -l notes.txt
+
+7. umask
+umask
+touch umask-test.txt
+ls -l umask-test.txt
+
+8. Shared Directory
+mkdir shared
+sudo chown kavi:task3group shared
+sudo chmod 2770 shared
+ls -ld shared
+touch shared/test.txt
+ls -l shared/test.txt
+rm shared/test.txt
+
+9. Read-only Directory
+mkdir readonly
+chmod 555 readonly
+ls -ld readonly
+touch readonly/test.txt

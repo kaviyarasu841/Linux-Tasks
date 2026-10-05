@@ -1,0 +1,42 @@
+LINUX TASK 3 - IMPORTANT OUTPUTS
+
+1. Basic File Permission
+-rw-r--r-- notes.txt
+
+2. Script Permission - 755
+-rwxr-xr-x hello.sh
+
+3. Script Execution
+Hello from Linux
+
+4. Broken Script Permission - 644
+-rw-r--r-- hello.sh
+
+5. Permission Denied
+-bash: ./hello.sh: Permission denied
+
+6. Fixed Script Permission - 755
+-rwxr-xr-x hello.sh
+
+7. chown
+Before: kavi kavi
+After restoring: kavi kavi
+
+8. chgrp
+Group changed to: task3group
+Restored group to: kavi
+
+9. umask
+0022
+
+10. New File Permission
+-rw-r--r-- umask-test.txt
+
+11. Shared Directory
+drwxrws--- kavi task3group shared
+
+12. Read-only Directory
+dr-xr-xr-x readonly
+
+13. Read-only Test
+Permission denied
